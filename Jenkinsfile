@@ -2,7 +2,7 @@ node("Maven") {
    def mvnHome
    stage('Preparati0n') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+      git branch: '$(branch)', url: 'https://github.com/rnddept/vcard.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
